@@ -8,6 +8,11 @@ I wrote this because Go programs can't fork() like C programs.  In a normal setu
 
 Created sockets are chmod 755.  To make things easy, just run this as whatever user will be writing to the socket e.g., if you're using nginx, you'll run this as the same user nginx runs as (probably "nobody").  Any other user can read from it.
 
+## Usage
+
+    ./socketbro --paths=/tmp/socket1.sock,/tmp/socket2.sock,/tmp/socket3.sock
+
+
 ## Feedback
 
 Please feel free to send pull requests or file issues.
